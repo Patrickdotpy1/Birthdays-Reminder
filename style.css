@@ -1,0 +1,51 @@
+.container1{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.container2{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 140px;
+}
+
+
+.input-css{
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    width: 70px;
+}
+
+
+.input2-css{
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    width: 20px;
+}
+
+
+.button-css{
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+.border{
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+.example-font-css{
+    color: gainsboro;
+}
