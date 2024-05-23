@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Birthday Reminder</title>
+    </head>
+
+
+    <body>
+        <script src="script.js"></script>
+        <center>
+
+            <div class="container1">
+                <div class="dropdown-container">
+                    <button class="sort-button">Sort</button>
+                    <div class="dropdown-content">
+                        <button class="sort-option" id="sortByBirth" onclick="sortBirthdays()">by birthday</button>
+                        <button class="sort-option" id="sortByAge">by age</button>
+                        <button class="sort-option" id="sortBname">by name</button>
+                    </div>
+                </div><br>
+
+                <table id="main_table">
+                    <tr>
+                        <th>Name&nbsp;&nbsp;&nbsp;</th>
+                        <th>Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        <th>Birthday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        <th>Until birthday</th>
+                    </tr>
+                </table>
+            </div>
+            
+            
+            <div class="container2">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>Birthday date</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="input-name" class="input-css" placeholder="Richard Johnson"></td>
+                        <td><input type="text" id="input-age" class="input2-css" placeholder="20"></td>
+                        <td><input type="text" id="input-date" class="input2-css" placeholder="27"> / <input type="text" id="input-month" class="input2-css" placeholder="07"></td>
+                    </tr>
+                </table>
+                <button type="button" onclick="addInfo()" class="button-css">Add info</button>
+            </div>
+        </center>
+
+
+        <div class="pop-up" style="display:none">
+                <button class="x-button-css" type="button" onclick="hidePopUp()">X</button>
+                <center> <h3 class="person-name">Patrick</h3> </center>
+                <h4 class="person-age">Age: 18</h4>
+                <h4 class="person-bday">Birth date: 16 February</h4>
+                <h4 class="person-bday-in">Birthday: in 6 month(s)</h4>
+                <h4 class="person-gifts-text">Prefered birthday gifts:</h4>
+                <label class="prefered-gift-label"><p>Prefered gifts</p></label>
+                <button class="remove-preferences" onclick="removeGift()">Remove</button><br>
+                <input class="gifts-input" type="text" placeholder="Eg: chocolate, flowers, etc.">
+                <button class="gifts-add-button" onclick="addGift()">Add</button>
+        </div>
+    </body>
+
+</html>
